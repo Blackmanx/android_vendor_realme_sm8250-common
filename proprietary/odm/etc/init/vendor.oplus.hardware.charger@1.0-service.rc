@@ -1,0 +1,10 @@
+service charger_hal_service /odm/bin/hw/vendor.oplus.hardware.charger@1.0-service
+#	interface vendor.oplus.hardware.charger@1.0::ICharger default
+	class hal
+	user system
+	group system
+
+on property:sys.boot_completed=1
+	write /proc/ui_soc_decimal 1
+	chmod 0666 /sys/class/power_supply/battery/current_now
+	chown system system /sys/class/oplus_chg/wireless/status_keep

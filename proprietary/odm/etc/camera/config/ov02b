@@ -1,0 +1,601 @@
+[
+
+{
+  "Key": "NORMAL_RAWHDR_OUTDOOR_ISO",
+  "Value": "160"
+},
+
+{
+  "Key": "NORMAL_RAWHDR_OUTDOOR_FACE_ISO",
+  "Value": "250"
+},
+
+{
+  "Key": "NORMAL_RAWHDR_INDOOR_ISO",
+  "Value": "500"
+},
+
+{
+  "Key": "NORMAL_RAWHDR_INDOOR_FACE_ISO",
+  "Value": "700"
+},
+
+{
+  "Key": "REAR_LOWLIGHT_YUVHDR_ISO",
+  "Value": "2100"
+},
+
+{
+  "Key": "REAR_LOWLIGHT_MFNR_ISO",
+  "Value": "5000"
+},
+
+{
+  "Key": "NIGHT_SCENE_LUX_INDEX_NIGHT_MIN",
+  "Value": "350"
+},
+
+{
+  "Key": "NIGHT_SCENE_LUX_INDEX_NIGHT_MAX",
+  "Value": "500"
+},
+
+{
+  "Key": "NIGHT_SCENE_SENSOR_BAYER_PATTERN",
+  "Value": "2",
+  "Comment": "0:RGGB 1:BGGR 2:GRBG 3:GBRG"
+},
+
+{
+  "Key": "NIGHT_SCENE_CAMERA_MODE",
+  "Value": "295"
+},
+
+{
+  "Key": "SENSOR_PHYSICAL_ID",
+  "Value": "2"
+},
+
+{
+  "Key": "FLIP_MIRROR_TYPE",
+  "Value": "1",
+  "Comment": "1:swap 90,270 2:swap 0,180 3:swap all"
+},
+
+{
+  "Key": "LOWLIGHT_AE_BRACKET_ISO",
+  "Value": "5000"
+},
+
+{
+  "Key": "MOTION_AE_BRACKET_ISO",
+  "Value": "200"
+},
+
+{
+  "Key": "MODIFY_BLURLESS_SIMULATE",
+  "Value": "1",
+  "Comment": "0=disable, 1=enable"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.blurless",
+  "Type": "Float",
+  "Count": "691",
+  "Value": "
+            10 /*isoZoneNumber*/
+
+            /*index0*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            100 /*iso*/,
+            1.2, 1.2, 1.2, 1.2, 0.6, 0.5, 0.1, 0.1, 0.1, 0.1 /*luminanceNoiseReduction*/,
+            0.2, 0.2, 0.2, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            1, 1, 1, 1, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            1 /*movingObjectNoiseRemoval*/,
+            15 /*inputSharpnessThreshold*/,
+            0.15 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            65 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index1*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            400 /*iso*/,
+            1.4, 1.4, 1.4, 1.4, 0.9, 0.7, 0.5, 0.5, 0.5, 0.5 /*luminanceNoiseReduction*/,
+            0.4, 0.4, 0.4, 0.4, 0.3, 0.1, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            1, 1, 1, 1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            2 /*movingObjectNoiseRemoval*/,
+            20 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            60 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index2*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            800 /*iso*/,
+            2.0, 2.0, 2.0, 2.0, 1.3, 1.2, 0.5, 0.5, 0.5, 0.5 /*luminanceNoiseReduction*/,
+            0.6, 0.6, 0.6, 0.6, 0.3, 0.1, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            1.1, 1.1, 1.1, 1.1, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            2 /*movingObjectNoiseRemoval*/,
+            20 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            55 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index3*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            1200 /*iso*/,
+            3.0, 2.8, 2.6, 2.4, 2.2, 1.9, 1.4, 1.4, 1.4, 1.4 /*luminanceNoiseReduction*/,
+            1.8, 1.6, 1.4, 1.2, 1.0, 0.8, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            1.2, 1.2, 1.2, 1.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            3 /*movingObjectNoiseRemoval*/,
+            25 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            55 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index4*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            1600 /*iso*/,
+            4.6, 4.4, 4.2, 4.0, 3.8, 0.9, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            2.3, 2.1, 1.9, 1.7, 1.5, 1.3, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            1.3, 1.3, 1.3, 1.3, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            4 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            55 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index5*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            2400 /*iso*/,
+            7.0, 6.7, 6.3, 6.0, 5.5, 5.2, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            3.2, 3.0, 2.8, 2.6, 2.2, 2.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            0.2, 0.4, 0.5, 0.6, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            4 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            47 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index6*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            3200 /*iso*/,
+            7.0, 6.7, 6.3, 6.0, 5.5, 5.2, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            3.2, 3.0, 2.8, 2.6, 2.2, 2.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            0.2, 0.4, 0.5, 0.6, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            4 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.25 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            47 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index7*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            4000 /*iso*/,
+            7.0, 6.7, 6.3, 6.0, 5.5, 5.2, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            3.2, 3.0, 2.8, 2.6, 2.2, 2.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            0.2, 0.4, 0.5, 0.6, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            5 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            47 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index8*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            5700 /*iso*/,
+            7.0, 6.7, 6.3, 6.0, 5.5, 5.2, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            3.2, 3.0, 2.8, 2.6, 2.2, 2.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            0.2, 0.4, 0.5, 0.6, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            5 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            47 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index9*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            8000 /*iso*/,
+            7.0, 6.7, 6.3, 6.0, 5.5, 5.2, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            3.2, 3.0, 2.8, 2.6, 2.2, 2.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            0.2, 0.4, 0.5, 0.6, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            6 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            47 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index10*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            12000 /*iso*/,
+            7.0, 6.7, 6.3, 6.0, 5.5, 5.2, 0.4, 0.4, 0.4, 0.4 /*luminanceNoiseReduction*/,
+            3.2, 3.0, 2.8, 2.6, 2.2, 2.0, 0.0, 0.0, 0.0, 0.0 /*chromaNoiseReduction*/,
+            0.2, 0.4, 0.5, 0.6, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            6 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*faceSharpnessWeight*/,
+            6 /*effectiveFrames*/,
+            47 /*deghostingStrength*/,
+            1 /*ispPreProcessingUsed*/
+
+            /*index11*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index12*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index13*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index14*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ",
+  "Comment": "
+            isoZoneNumber,
+            frames,
+            blurless_params_scene,
+            iso,
+            engine_cfg_t[isoZoneNumber]"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.blurless.face",
+  "Type": "Float",
+  "Count": "691",
+  "Value": "
+            9 /*isoZoneNumber*/
+
+            /*index0*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            100 /*iso*/,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 /*luminanceNoiseReduction*/,
+            0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            1 /*movingObjectNoiseRemoval*/,
+            15 /*inputSharpnessThreshold*/,
+            0.15 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index1*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            400 /*iso*/,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            1 /*movingObjectNoiseRemoval*/,
+            20 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index2*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            800 /*iso*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            1 /*movingObjectNoiseRemoval*/,
+            25 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index3*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            1600 /*iso*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            1 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index4*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            2400 /*iso*/,
+            2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            1 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index5*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            3200 /*iso*/,
+            2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            2 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.20 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index6*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            4000 /*iso*/,
+            4.5, 4.0, 4.0, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            2 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index7*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            5700 /*iso*/,
+            5.0, 4.5, 4.5, 4.0, 4.0, 3.5, 3.5, 3.5, 3.5, 3.5 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            3 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index8*/,
+            0 /*frames*/,
+            0 /*scene*/,
+            8000 /*iso*/,
+            6.0, 5.5, 5.0, 5.0, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5 /*luminanceNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*chromaNoiseReduction*/,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 /*sharpen*/,
+            0 /*brightening*/,
+            0 /*colorBoost*/,
+            3 /*movingObjectNoiseRemoval*/,
+            30 /*inputSharpnessThreshold*/,
+            0.2 /*inputBrightnessThreshold*/,
+            1 /*highQualityFusion*/,
+            0 /*allocate*/,
+            -1 /*baseFrame*/,
+            0 /*faceNoiseReductionStrength*/,
+            0 /*skinNoiseReductionStrength*/,
+            0 /*frontCameraMode*/,
+            6 /*effectiveFrames*/,
+            0 /*deghostingStrength*/
+
+            /*index9*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index10*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index11*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index12*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index13*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+            /*index14*/,
+            0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ",
+  "Comment": "
+            isoZoneNumber,
+            frames,
+            blurless_params_scene,
+            iso,
+            engine_cfg_t[isoZoneNumber]"
+},
+
+]

@@ -1,0 +1,225 @@
+{
+    "default": {
+        "feature_aps_enable": true,
+        "feature_auth_enable": true,
+        "feature_3a_enable": true,
+        "feature_evication_enable": true,
+        "feature_resolution_enable": true,
+        "feature_government_enalbe": true,
+        "feature_sound_enable": true,
+        "feature_flash_enable": true,
+        "feature_fps_enable": true,
+        "feature_rio_enable": true,
+        "limit_3rd_app_size": [
+            "com.mt.mtxx.mtxx.sub.preview",
+            "com.benqu.wuta.sub.preview",
+            "com.huajiao.camera.sub.preview",
+            "com.tencent.funcam.sub.preview",
+            "com.mt.mtxx.mtxx.main.preview",
+            "com.benqu.wuta.main.preview",
+            "com.huajiao.camera.main.preview",
+            "com.gorgeous.lite.main.preview",
+            "com.meitu.meiyancamera.main.preview",
+            "com.meitu.wheecam.main.preview",
+            "com.huajiao.camera.sub.Texture"
+        ],
+        "limit_3rd_app_size_byLevel": [
+            "autotest.oplus.com.simulatedlivebroadcast.level1",
+            "com.fingogroup.fingo.level1",
+            "com.rapido.rider.level1"
+        ],
+        "skip_rus_check_list": [
+            "android",
+            "com.oplus.engineercamera"
+        ],
+        "disable_camera_shutter_sound_app_list": [
+            "com.facebook.orca",
+            "com.facebook.orca",
+            "com.instagram.android",
+            "com.facebook.katana"
+        ],
+        "defaultMaxPreviewWidth": 3216,
+        "defaultMaxPreviewHeight": 3216,
+        "previewSizeForAPI1Width": 3268,
+        "previewSizeForAPI1Height": 2440,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "4608x3456",
+            "4160x3120",
+            "4160x2340",
+            "4096x2160",
+            "2688x1512",
+            "2592x1944",
+            "2592x1940",
+            "2592x1458",
+            "2592x1232",
+            "2592x1196",
+            "2560x1920"
+        ]
+    },
+    "org.codeaurora.ims": {
+        "isFreeDomEvictionPackge": true
+    },
+    "android": {
+        "isFreeDomEvictionPackge": true
+    },
+    "vendor.client.pid": {
+        "isFreeDomEvictionPackge": true
+    },
+    "com.tencent.mm": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080,
+        "app_enable_rio": true
+    },
+    "com.teamtalk.im": {
+        "previewSizeForAPI1Width": 3216,
+        "previewSizeForAPI1Height": 1440
+    },
+    "com.tencent.zebra": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.marykay.vmo.my": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "net.one97.paytm": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "im.thebot.messenger": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080,
+        "needLimitFpsForAPI1": true
+    },
+    "com.alibaba.android.rimet": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.kuaidihelp.posthouse": {
+        "previewSizeForAPI1Width": 1280,
+        "previewSizeForAPI1Height": 720
+    },
+    "com.kufeng.hj.enjoy": {
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.netease.gl": {
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.xpx365.projphoto": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.marykay.vmo.my": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "net.one97.paytm": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "im.thebot.messenger": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.alibaba.android.rimet": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.kufeng.hj.enjoy": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "activity.assure.js.zjspersonnel.jsv3personnel": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.tencent.mobileqq": {
+        "app_enable_rio": false
+    },
+    "com.ss.android.ugc.aweme": {
+        "app_enable_rio": true
+    },
+    "com.facebook.katana": {
+        "app_enable_rio": true
+    },
+    "com.facebook.orca": {
+        "app_enable_rio": true
+    },
+    "com.whatsapp.w4b": {
+        "app_enable_rio": true
+    },
+    "com.instagram.android": {
+        "app_enable_rio": true
+    },
+    "com.ss.android.ugc.trill": {
+        "app_enable_rio": true
+    },
+    "com.oplus.engineercamera": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "4608x3456",
+            "4160x3120",
+            "4160x2340",
+            "4096x2160",
+            "2688x1512",
+            "2592x1944",
+            "2592x1940",
+            "2592x1458",
+            "2592x1232",
+            "2592x1196",
+            "2592x1920"
+        ]
+    },
+    "com.twitter.android": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080,
+        "maxRatioFilterForNotAddSizeAPI1": 177,
+        "minRatioFilterForNotAddSizeAPI1": 133,
+        "needLimitFpsForAPI1": true
+    },
+    "com.whatsapp": {
+        "needlimitSizeForSurface": true,
+        "limitWidthForSurface": 1920,
+        "limitHeightForSurface": 1080,
+        "app_enable_rio": true
+    },
+    "com.tencent.wework": {
+        "needLimitFpsForAPI1": true
+    },
+    "com.skype.raider": {
+        "needLimitFpsForAPI1": true
+    },
+    "com.vkontakte.android": {
+        "needLimitFpsForAPI1": true
+    },
+    "jp.naver.linecamera.android": {
+        "needLimitFpsForAPI1": true
+    },
+    "com.blink.academy.nomopro": {
+        "needLimitFpsForAPI1": true
+    },
+    "com.microsoft.office.excel": {
+        "needLimitFpsForAPI1": true
+    },
+    "com.eg.android.AlipayGphone": {
+        "needLimitFpsForAPI1": true
+    },
+    "com.smile.gifmaker": {
+        "app_enable_rio": true,
+        "adjustInvalidFpsForAPI1": true
+    },
+    "com.taobao.taobao": {
+        "checkToAddPreviewCallbackForAPI1": true
+    },
+    "com.example.anchortooldemo": {
+        "checkToAddPreviewCallbackForAPI1": true
+    },
+    "autotest.oppo.com.simulatedlivebroadcast": {
+        "resolutionFilterForNotAddPreviewSizeAPI1": [
+            "4000x1818",
+            "4000x1800",
+            "3840x1644",
+            "3264x1836",
+        ]
+    },
+}

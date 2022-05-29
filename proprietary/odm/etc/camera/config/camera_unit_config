@@ -1,0 +1,449 @@
+{
+  "camera_id_list": ["0", "1", "2", "3", "4"],
+
+  "main_info": {
+    "version_code": "1.0.2",
+    "version_date": "20200912000000"
+  },
+
+  "mode_type_list":{
+    "rear_wide":["video_mode", "photo_mode", "super_text_mode", "macro_mode", "fastvideo_mode", "professional_mode", "movie_mode", "street_mode"],
+    "rear_main":["video_mode", "photo_mode", "super_text_mode", "fastvideo_mode", "professional_mode", "id_photo_mode", "slowvideo_mode", "movie_mode", "panorama_mode", "ultraHD_mode","star_capture_mode","star_video_mode", "street_mode"],
+    "front_main":["video_mode", "photo_mode", "portrait_mode", "fastvideo_mode", "id_photo_mode", "night_mode", "panorama_mode"],
+    "rear_macro":["macro_mode"],
+    "rear_portrait":["portrait_mode"],
+    "rear_main_front_main":["multi_camera_mode"]
+  },
+
+  "device_info": {
+    "platform": "qcom"
+  },
+
+  "feature_operation_mode": {
+    "video_mode": {
+      "nightvideo": {
+        "normal_night_video": "80a2",
+        "ultra_night_video": "80a2"
+      },
+      "ai_night_video": {
+        "1": "80a7"
+      },
+
+      "stabilization":{
+        "super_stabilization":"8028",
+        "super_stabilization_front":"802B"
+      },
+
+      "fps":{
+        "video_60fps":"8021"
+      },
+
+      "fovc":{
+        "on":"0300"
+      }
+    },
+
+    "portrait_mode":{
+      "bokeh_type":{
+        "single_bokeh":"8026"
+      },
+
+      "portrait_body_type":{
+        "full_body":"8011"
+      }
+    },
+
+    "fastvideo_mode":{
+      "lapse":{
+        "hyper_lapse":"80a5"
+      },
+
+      "fovc":{
+        "on":"0300"
+      }
+    },
+
+    "movie_mode":{
+      "stabilization":{
+        "video_stabilization":"80a4"
+      }
+    }
+  },
+
+  "mode_operation_mode": {
+    "photo_mode": "8001",
+    "super_text_mode":"8001",
+    "video_mode": "800b",
+    "night_mode": "8019",
+    "panorama_mode": "8007",
+    "professional_mode": "8009",
+    "sticker_mode": "800E",
+    "fastvideo_mode": "800C",
+    "slowvideo_mode": "1",
+    "portrait_mode": "8011",
+    "multi_camera_mode": "802C",
+    "microscope_capture_mode":"8001",
+    "microscope_video_mode":"800b",
+    "macro_mode":"80A6",
+    "movie_mode":"80A3",
+    "id_photo_mode": "8002",
+    "ultraHD_mode": "8001",
+    "high_definition_mode": "8001",
+    "star_capture_mode": "80A8",
+    "star_video_mode": "80A8",
+    "street_mode": "8001"
+  },
+
+  "usecase_info": {
+    "sat_photo_case":[{"preview":"rear_sat"}, {"reprocess_input":"rear_sat"}, {"raw_output":"rear_sat"}, {"capture_yuv":"rear_main"}, {"capture_yuv":"rear_wide"}, {"capture_yuv":"rear_tele"}],
+    "sat_night_case":[{"preview":"rear_sat"}, {"reprocess_input":"rear_sat"}, {"raw_output":"rear_sat"}, {"capture_yuv":"rear_main"}, {"capture_yuv":"rear_wide"}, {"capture_yuv":"rear_tele"}],
+    "none_sat_night_case":[{"reprocess_input":"var_camera"}, {"preview":"var_camera"}, {"raw_output":"var_camera"}, {"capture":"var_camera"}],
+    "portrait_bokeh_case":[{"preview":"rear_main"}, {"preview":"rear_wide"}, {"capture":"rear_main"}, {"capture":"rear_wide"}],
+    "single_portrait_case":[{"preview":"var_camera"}, {"capture":"front_main"}],
+    "single_photo_case": [{"preview": "var_camera"}, {"capture_yuv": "var_camera"}],
+    "mfnr_photo_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"capture_yuv_mfnr":"var_camera"}],
+    "front_single_photo_case":[{"preview":"var_camera"}, {"capture":"var_camera"}],
+    "recorder_video_case":[{"preview":"var_camera"}, {"video_recorder":"var_camera"}],
+    "video_recorder_snapshot_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"video_recorder":"var_camera"}],
+    "video_frame_snapshot_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"video":"var_camera"}],
+    "hyper_lapse_case":[{"preview":"var_camera"}, {"video":"var_camera"}],
+    "eis_pro_case":[{"preview":"var_camera"}, {"video_recorder":"var_camera"}],
+    "video_watermark_case":[{"preview":"var_camera"}, {"video":"var_camera"}],
+    "codec_video_case": [{"preview": "var_camera"}, {"capture_yuv": "var_camera"}],
+    "preview_frame_case":[{"preview":"var_camera"}, {"preview_frame":"var_camera"}, {"capture":"var_camera"}],
+    "multi_case_main_wide":[{"preview":"rear_main"}, {"preview":"rear_wide"}],
+    "multi_case_main_tele":[{"preview":"rear_main"}, {"preview":"rear_tele"}],
+    "multi_case_wide_tele":[{"preview":"rear_wide"}, {"preview":"rear_tele"}],
+    "simple_preview_case":[{"preview":"var_camera"}],
+    "simple_photo_case":[{"preview":"var_camera"}, {"capture":"var_camera"}],
+    "professional_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"capture_raw":"var_camera"}],
+    "street_case":[{"preview": "var_camera"}, {"capture_yuv": "var_camera"}, {"capture_raw":"var_camera"}],
+    "front_night_case":[{"reprocess_input":"front_main"}, {"preview":"front_main"}, {"raw_output":"front_main"}, {"capture":"front_main"}],
+    "panorama_case":[{"preview":"var_camera"}, {"preview_frame":"var_camera"}],
+    "microscope_capture_case":[{"preview":"var_camera"}, {"capture":"var_camera"}],
+    "id_photo_case": [{"preview": "rear_main"}, {"capture": "rear_main"}],
+    "ultra_high_resolution_case":[{"preview": "rear_main"}, {"capture": "rear_main"}],
+    "star_capture_case":[{"reprocess_input":"rear_main"}, {"preview":"rear_main"}, {"raw_output":"rear_main"}, {"capture":"rear_main"}]
+  },
+
+  "support_default_preview_sizes": ["1920X1080","1280X720"],
+
+  "mode_type_feature_support_preview_size": {
+    "video_mode": {
+      "rear_main": {
+        "super_stabilization": ["1920X1080", "1920X1080"]
+      },
+      "rear_wide": {
+        "super_stabilization": ["1920X1080", "1920X1080"]
+      }
+    },
+
+    "portrait_mode": {
+      "rear_portrait": {
+        "dual_bokeh": ["1280X960", "1280X960"]
+      }
+    }
+  },
+
+  "support_default_video_sizes": ["4000X3000", "3840X2160", "2752X1548", "1920X1080", "1280X720"],
+
+  "mode_type_feature_max_video_size": {
+    "video_mode": {
+      "rear_main": {
+        "video_stabilization": ["1920X1080", "1920X1080"],
+        "super_stabilization":["1920X1080", "1920X1080"],
+        "default": ["1920X1080", "1920X1080"]
+      },
+      "rear_wide": {
+        "video_stabilization": ["1920X1080", "1920X1080"],
+        "super_stabilization":["1920X1080", "1920X1080"],
+        "default": ["1920X1080", "1920X1080"]
+      },
+      "front_main": {
+        "default": ["1920X1080", "1920X1080"]
+      },
+      "rear_sat": {
+        "default": ["1920X1080", "1920X1080"]
+      }
+    },
+
+    "fastvideo_mode":{
+      "rear_main":{
+        "hyper_lapse":["1920X1080", "1920X1080"],
+        "default":["1920X1080", "1920X1080"]
+      },
+
+      "rear_wide":{
+        "hyper_lapse":["1920X1080", "1920X1080"],
+        "default":["1920X1080", "1920X1080"]
+      },
+
+      "front_main":{
+        "default":["1920X1080", "1920X1080"]
+      },
+
+      "rear_sat":{
+        "hyper_lapse":["2560X1440", "1920X1080"],
+        "default":["1920X1080", "1920X1080"]
+      }
+    },
+
+    "slowvideo_mode": {
+      "rear_main": {
+        "default": ["1920X1080", "1920X1080"]
+      }
+    }
+  },
+
+  "mode_cameraType_sensor_number": {
+    "portrait_mode": [{"rear_portrait": "2"}]
+  },
+
+  "parameter_feature_mapping": {
+    "com.oplus.configure.video.stabilization":["stabilization", "String", "3"],
+    "com.oplus.configure.video.fps":["fps", "String", "3"],
+    "com.oplus.configure.video.fovc":["fovc", "String", "3"],
+    "com.oplus.preview.video.beauty.exfoliating":["exfoliating", "String", "1"],
+    "com.oplus.preview.video.beauty.thin_face":["thin_face", "String", "1"],
+    "com.oplus.preview.flash.mode":["flash", "String", "1"],
+    "com.oplus.preview.focus.mode":["focus", "Integer", "1"],
+    "com.oplus.preview.night.video.mode":["nightvideo", "String", "3"],
+    "com.oplus.preview.feature.zoom.range": ["zoom_range", "Float", "1"],
+    "com.oplus.sat.none.zoom.ratio": ["none_zoom_ratio", "Float", "1"],
+    "com.oplus.video.stabilization.mode": ["ai_night_video", "Integer", "3"],
+    "com.oplus.preview.capture.hdrMode": ["hdr", "String", "1"],
+    "com.oplus.portrait.bokeh.type": ["bokeh_type", "String", "3"],
+    "com.oplus.preview.capture.ai":["ai_photo", "String", "1"],
+    "com.oplus.configure.fastvideo.hyperLapse":["lapse", "String", "3"]
+  },
+
+  "vendor_tag_type_values": {
+    "com.oplus.sat.wide.support.imagesizes": "4096X3072X4096X2304X4096X1840X3072X3072",
+    "com.oplus.sat.ultra.support.imagesizes": "4624X3468X4624X2608X4624X2080X3468X3468",
+    "com.oplus.sat.tele.support.imagesizes": "4000X3000X4000X2256X4000X1800X3000X3000",
+    "com.oplus.flash.wide.tel.support": "1",
+    "com.oplus.night.pro.support": "1",
+    "com.oplus.sat.need.set.zoomratio": "0"
+  },
+
+  "fastvideo_mode_featureTable": {
+    "front_main":{
+      "fovc/[on,off]":["0", "0", "0"],
+      "fps/video_30fps":["0", "0", "0"],
+      "lapse/[hyper_lapse, off]":["0", "0", "0"]
+    },
+
+    "rear_main":{
+      "fps/[video_30fps,video_60fps]":["0", "0", "0", "0"],
+      "focus/[2,3,4]":["0", "0", "0", "0"],
+      "lapse/[hyper_lapse, off]":["0", "0", "0", "0"],
+      "fovc/[on,off]":["0", "0", "0", "0"]
+    },
+
+    "rear_wide":{
+      "fps/[video_30fps,video_60fps]":["0", "0", "0", "0"],
+      "focus/[2,3,4]":["0", "0", "0", "0"],
+      "lapse/[hyper_lapse, off]":["0", "0", "0", "0"],
+      "fovc/[on,off]":["0", "0", "0", "0"]
+    },
+
+    "rear_sat":{
+      "fps/[video_30fps,video_60fps]":["0", "0", "0", "0"],
+      "focus/[2,3,4]":["0", "0", "0", "0"],
+      "lapse/[hyper_lapse, off]":["0", "0", "0", "0"],
+      "fovc/[on,off]":["0", "0", "0", "0"]
+    }
+  },
+
+  "slowvideo_mode_featureTable":{
+    "rear_main":{
+      "flash/[off,torch]":["0", "0"],
+      "focus/[2,3,4]":["0", "0"]
+    }
+  },
+
+  "portrait_mode_featureTable":{
+    "rear_portrait":{
+      "focus/[1,3,4]":["0", "0"],
+      "portrait_body_type/[full_body]":["0", "0"]
+    }
+  },
+
+  "super_text_mode_featureTable":{
+    "rear_main":{
+      "flash/[on,off,auto,torch]":["0", "0"],
+      "focus/[1,3,4]":["0", "0"]
+    },
+
+    "rear_wide":{
+      "focus/[1,3,4]":["0"]
+    }
+  },
+
+  "multi_camera_mode_featureTable":{
+    "rear_main":{
+      "flash/[off,torch]":["0", "0"],
+      "focus/[1,3,4]":["0", "0"]
+    }
+  },
+
+  "video_mode_featureTable":{
+    "front_main":{
+      "fovc/[on,off]":["0", "0", "0"],
+      "fps/video_30fps":["0", "0", "0"],
+      "stabilization/super_stabilization_front":["0", "0", "0"]
+    },
+
+    "rear_main":{
+      "fovc/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "flash/[off,torch]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "stabilization/super_stabilization":["0", "0", "0", "1", "1", "0", "0", "0", "0", "1", "1", "0", "0"],
+      "stabilization/video_stabilization":["0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "fps/video_30fps":["0", "0", "1", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0"],
+      "fps/video_60fps":["0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "0"],
+      "focus/[2,3,4]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "nightVideo/normal_night_video":["0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0"],
+      "nightVideo/ultra_night_video":["0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0"],
+      "ai_night_video/0":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0"],
+      "ai_night_video/1":["0", "0", "1", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0"],
+      "beauty/exfoliating/[0, 1, 2, 3]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "beauty/thin_face/[0, 1, 2, 3, 4]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+    },
+
+    "rear_wide":{
+      "fovc/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "stabilization/super_stabilization":["0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "fps/video_30fps":["0", "0", "0", "1", "0", "0", "0", "0", "0"],
+      "fps/video_60fps":["0", "0", "1", "0", "0", "0", "0", "0", "1"],
+      "focus/[2,3,4]":["0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "nightVideo/normal_night_video":["0", "0", "0", "0", "0", "0", "1", "0", "0"],
+      "nightVideo/ultra_night_video":["0", "0", "0", "0", "0", "1", "0", "0", "0"],
+      "ai_night_video/0":["0", "0", "0", "0", "0", "0", "0", "0", "1"],
+      "ai_night_video/1":["0", "0", "0", "0", "0", "0", "0", "1", "0"]
+    },
+
+    "rear_sat":{
+      "fovc/[on,off]":["0", "0", "0", "0", "0", "0", "0"],
+      "flash/[off,torch]":["0", "0", "0", "0", "0", "0", "0"],
+      "stabilization/video_stabilization":["0", "0", "0", "0", "0", "0", "0"],
+      "fps/video_30fps":["0", "0", "0", "0", "1", "0", "0"],
+      "fps/video_60fps":["0", "0", "0", "1", "0", "0", "0"],
+      "focus/[2,3,4]":["0", "0", "0", "0", "0", "0", "0"],
+      "none_zoom_ratio/[0.6f,1.0f,5.0f]":["0", "0", "0", "0", "0", "0", "0"]
+    }
+  },
+
+  "night_mode_featureTable":{
+    "rear_main":{
+      "focus/[1,3,4]":["0"]
+    },
+
+    "rear_sat":{
+      "focus/[1,3,4]":["0", "0"],
+      "none_zoom_ratio/[0.6f,1.0f,5.0f]":["0", "0"]
+    }
+  },
+
+  "photo_mode_featureTable":{
+    "rear_main":{
+      "flash/on":["0", "1", "1", "1", "0", "1", "0", "1", "0"],
+      "flash/off":["1", "0", "1", "1", "0", "0", "0", "0", "0"],
+      "flash/auto":["1", "1", "0", "1", "0", "1", "0", "0", "0"],
+      "flash/torch":["1", "1", "1", "0", "0", "1", "0", "1", "0"],
+      "focus/[1,3,4]":["0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "hdr/on":["1", "0", "1", "1", "0", "0", "1", "1", "0"],
+      "hdr/off":["0", "0", "0", "0", "0", "1", "0", "1", "0"],
+      "hdr/auto":["1", "0", "0", "1", "0", "1", "1", "0", "0"],
+      "ai_photo/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0"]
+    },
+
+    "rear_wide":{
+      "focus/[1,3,4]":["0", "0", "0"],
+      "hdr/[on,auto,off]":["0", "0", "0"],
+      "ai_photo/[on,off]":["0", "0", "0"]
+    },
+
+    "rear_sat":{
+      "flash/on":["0", "1", "1", "1", "0", "0", "1", "0", "1", "0"],
+      "flash/off":["1", "0", "1", "1", "0", "0", "0", "0", "0", "0"],
+      "flash/auto":["1", "1", "0", "1", "0", "0", "1", "0", "0", "0"],
+      "flash/torch":["1", "1", "1", "0", "0", "0", "1", "0", "1", "0"],
+      "focus/[1,3,4]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "none_zoom_ratio/[0.6f,1.0f,2.0f]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "hdr/on":["1", "0", "1", "1", "0", "0", "0", "1", "1", "0"],
+      "hdr/off":["0", "0", "0", "0", "0", "0", "1", "0", "1", "0"],
+      "hdr/auto":["1", "0", "0", "1", "0", "0", "1", "1", "0", "0"],
+      "ai_photo/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+    }
+  },
+
+  "professional_mode_featureTable":{
+    "rear_tele":{
+      "flash/[on,off,auto,torch]":["0", "0"],
+      "focus/[1,3,4]":["0", "0"]
+    },
+
+    "rear_main":{
+      "flash/[on,off,auto,torch]":["0", "0"],
+      "focus/[1,3,4]":["0", "0"]
+    },
+
+    "rear_wide":{
+      "flash/[on,off,auto,torch]":["0", "0"],
+      "focus/[1,3,4]":["0", "0"]
+    }
+  },
+
+  "movie_mode_featureTable":{
+      "rear_tele":{
+        "flash/[off,torch]":["0", "0", "0"],
+        "focus/[1,3,4]":["0", "0", "0"],
+        "stabilization/video_stabilization":["0", "0", "0"]
+      },
+
+      "rear_main":{
+        "flash/[off,torch]":["0", "0", "0"],
+        "focus/[1,3,4]":["0", "0", "0"],
+        "stabilization/video_stabilization":["0", "0", "0"]
+      },
+
+      "rear_wide":{
+        "flash/[off,torch]":["0", "0", "0"],
+        "focus/[1,3,4]":["0", "0", "0"],
+        "stabilization/video_stabilization":["0", "0", "0"]
+      }
+  },
+
+  "street_mode_featureTable":{
+    "rear_main":{
+      "flash/on":["0", "1", "1", "1", "0", "1", "0", "1", "0"],
+      "flash/off":["1", "0", "1", "1", "0", "0", "0", "0", "0"],
+      "flash/auto":["1", "1", "0", "1", "0", "1", "0", "0", "0"],
+      "flash/torch":["1", "1", "1", "0", "0", "1", "0", "1", "0"],
+      "focus/[1,3,4]":["0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "hdr/on":["1", "0", "1", "1", "0", "0", "1", "1", "0"],
+      "hdr/off":["0", "0", "0", "0", "0", "1", "0", "1", "0"],
+      "hdr/auto":["1", "0", "0", "1", "0", "1", "1", "0", "0"],
+      "ai_photo/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0"]
+    },
+
+    "rear_wide":{
+      "focus/[1,3,4]":["0", "0", "0"],
+      "hdr/[on,auto,off]":["0", "0", "0"],
+      "ai_photo/[on,off]":["0", "0", "0"]
+    },
+
+    "rear_sat":{
+      "flash/on":["0", "1", "1", "1", "0", "0", "1", "0", "1", "0"],
+      "flash/off":["1", "0", "1", "1", "0", "0", "0", "0", "0", "0"],
+      "flash/auto":["1", "1", "0", "1", "0", "0", "1", "0", "0", "0"],
+      "flash/torch":["1", "1", "1", "0", "0", "0", "1", "0", "1", "0"],
+      "focus/[1,3,4]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "none_zoom_ratio/[0.6f,1.0f,2.0f]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "hdr/on":["1", "0", "1", "1", "0", "0", "0", "1", "1", "0"],
+      "hdr/off":["0", "0", "0", "0", "0", "0", "1", "0", "1", "0"],
+      "hdr/auto":["1", "0", "0", "1", "0", "0", "1", "1", "0", "0"],
+      "ai_photo/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+    }
+  }
+}

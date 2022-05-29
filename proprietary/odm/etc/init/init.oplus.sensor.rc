@@ -1,0 +1,34 @@
+#/************************************************************************************
+#** Copyright (C), 2008-2018, OPPO Mobile Comm Corp., Ltd
+#** VENDOR_EDIT
+#** File: init.oplus.sensor.rc
+#**
+#** Description:
+#**	Definitions for init.oplus.sensor.rc
+#**
+#** Version: 1.0
+#** Date created: 2018/11/20,20:27
+#** Author: Chao.Zeng@PSW.BSP.Sensor
+#**
+#** --------------------------- Revision History: ------------------------------------
+#* <version>	    	<date>	    	<author>	             <desc>
+#* Revision 1.0		2019/05/16	qiuzuolin@PSW.BSP.Sensor	Created
+#**************************************************************************************/
+
+on boot
+    chown system system /sys/bus/platform/devices/oplus_iface.0/brightness
+    chown system system /sys/bus/platform/devices/oplus_iface.0/dc_actived
+    chown system system /proc/oplusAls_dc_info/dc_actived
+
+    chmod 0666 /sys/bus/platform/devices/oplus_iface.0/brightness
+    chmod 0666 /sys/bus/platform/devices/oplus_iface.0/dc_actived
+    chmod 0666 /proc/oplusAls_dc_info/dc_actived
+
+    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+    chmod 0666 /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+
+service oplus_sensor_fb /odm/bin/oplus_sensor_fb
+    user system
+    group system
+    class late_start
+    oneshot
