@@ -271,6 +271,13 @@ dex_import {
 }
 
 dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.3-java",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "dpmapi",
 	owner: "realme",
 	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
@@ -397,15 +404,6 @@ prebuilt_etc_xml {
 	name: "manifest_oplus_fingerprint",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_oplus_midas",
-	owner: "realme",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_midas.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,

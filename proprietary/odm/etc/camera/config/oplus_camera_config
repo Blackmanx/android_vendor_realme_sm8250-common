@@ -1170,13 +1170,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.se.night.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.capture.max.images",
   "Type": "Byte",
   "Count": "1",

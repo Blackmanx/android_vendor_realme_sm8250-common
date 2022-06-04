@@ -49,7 +49,7 @@ on early-boot
     chmod 0664 /dev/ssc_interactive
     chown system system /dev/ssc_interactive
 
-on post-fs-data
+on post-fs-data && property:ro.build.type=userdebug
     #sensors log dir
 
     mkdir /data/vendor/sensors 0777 system system
