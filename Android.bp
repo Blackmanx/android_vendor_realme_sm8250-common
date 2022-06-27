@@ -6,26 +6,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libMpeg4SwEncoder",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libMpeg4SwEncoder.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libMpeg4SwEncoder.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libfastcvopt",
 	owner: "realme",
 	strip: {
@@ -37,26 +17,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblbs_core",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liblbs_core.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblbs_core.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -130,17 +90,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.gpudrivers.kona.api30",
-	owner: "realme",
-	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "PowerOffAlarm",
 	owner: "realme",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -185,6 +134,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "dpmserviceapp",
+	owner: "realme",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "ims",
 	owner: "realme",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
@@ -205,19 +166,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "tcmclient",
-	owner: "realme",
-	jars: ["proprietary/framework/tcmclient.jar"],
-}
-
-dex_import {
-	name: "audiosphere",
-	owner: "realme",
-	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
 	system_ext_specific: true,
 }
 
@@ -288,6 +236,13 @@ dex_import {
 	name: "qcrilhook",
 	owner: "realme",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.alarm-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -406,42 +361,6 @@ prebuilt_etc_xml {
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_dsds",
-	owner: "realme",
-	src: "proprietary/odm/etc/vintf/manifest_dsds.xml",
-	filename_from_src: true,
-	sub_dir: "vintf",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_ssss",
-	owner: "realme",
-	src: "proprietary/odm/etc/vintf/manifest_ssss.xml",
-	filename_from_src: true,
-	sub_dir: "vintf",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "telephony_manifest_dsds",
-	owner: "realme",
-	src: "proprietary/odm/etc/vintf/telephony_manifest_dsds.xml",
-	filename_from_src: true,
-	sub_dir: "vintf",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "telephony_manifest_ssss",
-	owner: "realme",
-	src: "proprietary/odm/etc/vintf/telephony_manifest_ssss.xml",
-	filename_from_src: true,
-	sub_dir: "vintf",
 	device_specific: true,
 }
 
