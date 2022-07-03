@@ -467,7 +467,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_230.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_230.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin \
