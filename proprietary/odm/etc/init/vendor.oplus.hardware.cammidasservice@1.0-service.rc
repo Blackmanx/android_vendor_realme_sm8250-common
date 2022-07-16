@@ -1,4 +1,0 @@
-service oplus.cammidasservice-1-0 /odm/bin/hw/vendor.oplus.hardware.cammidasservice@1.0-service
-    class hal
-    user system
-    group system
