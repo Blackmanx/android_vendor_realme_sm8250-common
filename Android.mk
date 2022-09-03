@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter bitra,$(TARGET_DEVICE)),)
+ifneq ($(filter bitra bladerunner,$(TARGET_DEVICE)),)
 
 endif
