@@ -236,15 +236,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_13.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/gasryuv_1.2_wp.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gasryuv_1.2_wp.model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/fusion_model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/fusion_model_post \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/merged_model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/merged_model_post \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/video_retention_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/video_retention_model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/video_retention_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/video_retention_model_post \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/videolut_background.png:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/videolut_background.png \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/videolut_portrait.png:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/videolut_portrait.png \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/videolut_portrait_front.png:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/videolut_portrait_front.png \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/micFilter/blue_pink_3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/blue_pink_3.png \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/micFilter/curve_0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/curve_0.png \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/micFilter/green_orange_2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/green_orange_2.png \
