@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/sm8250-common
 
 PRODUCT_COPY_FILES += \
-    vendor/realme/sm8250-common/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
-    vendor/realme/sm8250-common/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
     vendor/realme/sm8250-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/realme/sm8250-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/realme/sm8250-common/proprietary/product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.hotwordenrollment.okgoogle.xml \
@@ -20,11 +18,20 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
     vendor/realme/sm8250-common/proprietary/odm/bin/oemnvbkdaemon:$(TARGET_COPY_OUT_ODM)/bin/oemnvbkdaemon \
     vendor/realme/sm8250-common/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
-    vendor/realme/sm8250-common/proprietary/odm/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_ODM)/bin/vl53l1_daemon_main \
     vendor/realme/sm8250-common/proprietary/odm/bin/sensor_recover.sh:$(TARGET_COPY_OUT_ODM)/bin/sensor_recover.sh \
+    vendor/realme/sm8250-common/proprietary/odm/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_ODM)/bin/vl53l1_daemon_main \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_ODM)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/aicolor/duallut_background.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/aicolor/duallut_background.bmp \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/aicolor/duallut_portrait.bmp:$(TARGET_COPY_OUT_ODM)/etc/camera/aicolor/duallut_portrait.bmp \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model_post \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model_post \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/video_retention_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/video_retention_model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/video_retention_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/video_retention_model_post \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/videolut_background.png:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/videolut_background.png \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/videolut_portrait.png:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/videolut_portrait.png \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc/videolut_portrait_front.png:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/videolut_portrait_front.png \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/anc_cl_kernel_ins.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel_ins.cache \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/ancsegbase/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/ancsegbase/anc_cl_kernel.cache \
@@ -123,16 +130,20 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BycYf7WWz \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Emerald.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/EyxRbD2UCe:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/EyxRbD2UCe \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/InsClarendon.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsClarendon.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/InsJuno.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsJuno.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/Martin.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Martin.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/Radiance.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Radiance.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/SJ3mbr6ef:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SJ3mbr6ef \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/Serenity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Serenity.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/SkpZ8ebbz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SkpZ8ebbz \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin \
@@ -146,10 +157,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/black_gold.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/blackandwhite.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/blackandwhite.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/bright_coloured.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/bright_coloured.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/calm-V5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/calm-V5.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/candy-P7.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/candy-P7.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/cola.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cola.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/default:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/default \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin \
@@ -161,14 +176,23 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/fuji-eterna-v2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/fuji-eterna-v2.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/fuji.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/fuji.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/gourmet.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gourmet.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/interstellar_space.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/interstellar_space.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/jw_sun.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jw_sun.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/jw_surprise.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jw_surprise.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/kodak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/kodak.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/mellow-V3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/mellow-V3.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/misty-P5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/misty-P5.CUBE.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/misty-V4.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/misty-V4.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/mono.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/mono.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/morandi.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/morandi.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/natural-P1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/natural-P1.CUBE.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/natural.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/natural.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/neon-2020.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/oplus-black-gold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-black-gold.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/oplus-cyberpunk.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-cyberpunk.cube.rgb.bin \
@@ -226,6 +250,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/type_fuji_chrome:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_chrome \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/type_fuji_provia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_provia \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/type_fuji_velvia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_velvia \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/vivid-cool.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/vivid-cool.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/vivid-lut.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/vivid-lut.cube.rgb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/vivid-warm.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/vivid-warm.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_res/film_grain_small.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/film_grain_small.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/filters_res/lut_all_points.png:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/lut_all_points.png \
@@ -240,15 +267,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/fw_lut/skinLUTs_yuv16_13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fw_lut/skinLUTs_yuv16_13.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/gasryuv_1.2_wp.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gasryuv_1.2_wp.model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/fusion_model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/fusion_model_post \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/merged_model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/merged_model_post \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/video_retention_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/video_retention_model \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/video_retention_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/video_retention_model_post \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/videolut_background.png:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/videolut_background.png \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/videolut_portrait.png:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/videolut_portrait.png \
-    vendor/realme/sm8250-common/proprietary/odm/etc/camera/megvii/videolut_portrait_front.png:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/videolut_portrait_front.png \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/modules/tt_hand_box_reg_v12.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_box_reg_v12.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/modules/tt_hand_det_v11.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_det_v11.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/modules/tt_hand_gesture_v11.1.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_gesture_v11.1.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/modules/tt_hand_kp_v6.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_kp_v6.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/modules/tt_hand_lr_v3.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/modules/tt_hand_lr_v3.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/tt_hand_box_reg_v12.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_box_reg_v12.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/tt_hand_det_v11.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_det_v11.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/tt_hand_gesture_v11.1.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_gesture_v11.1.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/tt_hand_kp_v6.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_kp_v6.0.model \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/gesture/tt_hand_lr_v3.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_lr_v3.0.model \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/micFilter/blue_pink_3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/blue_pink_3.png \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/micFilter/curve_0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/curve_0.png \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/micFilter/green_orange_2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/green_orange_2.png \
@@ -258,6 +286,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/motionblur/model.data:$(TARGET_COPY_OUT_ODM)/etc/camera/motionblur/model.data \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mtStereoParams.bin \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwStereoParams.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle \
+    vendor/realme/sm8250-common/proprietary/odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut0 \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut1 \
     vendor/realme/sm8250-common/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut10 \
@@ -482,836 +512,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/firmware/480ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/480ms_RTP.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/500ms_RTP.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/60ms_RTP.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Impression_channel_RTP_11.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Impression_channel_RTP_11.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Lifestyle_RTP_26.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lifestyle_RTP_26.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Reminiscence_RTP_33.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Reminiscence_RTP_33.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vision_RTP_40.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vision_RTP_40.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Vision_RTP_40_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vision_RTP_40_170.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin \
+    vendor/realme/sm8250-common/proprietary/odm/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/80ms_RTP.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_170.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_haptic_235.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_haptic_235_19161.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235_19161.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_168Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_168Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_170Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_172Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_172Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_174Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_176Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_176Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_178Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_178Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_180Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_180Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_listen_pop_53.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_listen_pop_53.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_listen_pop_53_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_listen_pop_53_235Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_160Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_162Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_162Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_164Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_164Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_166Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_168Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_168Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_170Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_172Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_172Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_174Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_176Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_176Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_178Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_178Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_180Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_180Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_225Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_225Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_227Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_227Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_228Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_228Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_229Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_229Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_231Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_231Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_232Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_232Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_233Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_233Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_235Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_realme_its_realme_RTP_161_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_its_realme_RTP_161_235Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_realme_jingle_RTP_163_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_jingle_RTP_163_235Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_realme_tune_RTP_162_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_tune_RTP_162_235Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_reserved_108.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_108.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_reserved_109.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_109.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_lighthouse.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_165Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_175Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_226Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/awinic_haptic_gun_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_gun_params.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_params.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
-    vendor/realme/sm8250-common/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
     vendor/realme/sm8250-common/proprietary/odm/lib/libDeVIS.so:$(TARGET_COPY_OUT_ODM)/lib/libDeVIS.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/libaudioEngineerTest.so:$(TARGET_COPY_OUT_ODM)/lib/libaudioEngineerTest.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
@@ -1368,6 +573,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/camera/components/com.oplus.node.videohdr.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.videohdr.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/camera/components/com.oplus.node.videonight.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.videonight.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.qti.stats.haf.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.qti.stats.pdlib.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/camera/components/libipebpsstriping.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/libipebpsstriping.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G3.default.so \
@@ -1392,6 +598,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libEIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libEIS.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libFDClite.so:$(TARGET_COPY_OUT_ODM)/lib64/libFDClite.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libFaceBeautyCap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyCap.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/libFaceBeautyJni.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyJni.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libFaceBeautyPICap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPICap.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libFaceBeautyPre.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPre.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libFaceDistortionCorrection.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDistortionCorrection.so \
@@ -1429,6 +636,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib64/libWaterMark.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libWaterMode.so:$(TARGET_COPY_OUT_ODM)/lib64/libWaterMode.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libXDocProcessSDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libXDocProcessSDK.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/libYTCommon.so:$(TARGET_COPY_OUT_ODM)/lib64/libYTCommon.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/lib_rectify.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_rectify.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libaiboost.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libaiboost_hexagon.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_hexagon.so \
@@ -1448,6 +656,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libapsdarksight.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsdarksight.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libapsexif.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsexif.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsjpeg.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/libapspng.so:$(TARGET_COPY_OUT_ODM)/lib64/libapspng.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libarc_eis.so:$(TARGET_COPY_OUT_ODM)/lib64/libarc_eis.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libarc_eis_custom.so:$(TARGET_COPY_OUT_ODM)/lib64/libarc_eis_custom.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libarc_sateis.so:$(TARGET_COPY_OUT_ODM)/lib64/libarc_sateis.so \
@@ -1494,6 +703,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libcom.oplus.calidatacontainer.so:$(TARGET_COPY_OUT_ODM)/lib64/libcom.oplus.calidatacontainer.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libcvface_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libcvface_api.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib64/libdav1d.so.4 \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/libeffect_custom.so:$(TARGET_COPY_OUT_ODM)/lib64/libeffect_custom.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libfastov_dsp.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libgf_hal_G3.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G3.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libgf_hal_G5.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G5.so \
@@ -1510,8 +720,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_ODM)/lib64/libop-ai-beauty-faceretouch-cn.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_process.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_stub.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/libpngwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpngwrapper.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/librpmbengclient.so:$(TARGET_COPY_OUT_ODM)/lib64/librpmbengclient.so \
@@ -1540,11 +752,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_ODM)/lib64/sensors.hal.tof.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.oplusSensor@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
@@ -1587,8 +801,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
     vendor/realme/sm8250-common/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/realme/sm8250-common/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
-    vendor/realme/sm8250-common/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
-    vendor/realme/sm8250-common/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/realme/sm8250-common/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/realme/sm8250-common/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/realme/sm8250-common/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -1625,7 +837,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/realme/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/realme/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
-    vendor/realme/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/realme/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
     vendor/realme/sm8250-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/realme/sm8250-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
@@ -1748,7 +959,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
-    vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/realme/sm8250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
@@ -1801,6 +1011,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/kona_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx932x_0.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lps22hh_0.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/mmc5603nj.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc5603nj.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/pah_813x_0_reg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pah_813x_0_reg.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
@@ -1815,6 +1026,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_direct_channel.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_direct_channel.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
@@ -1837,6 +1049,27 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/stk3x5x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3x5x_0.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx932x_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_bma4_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_bma4_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_bmg160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_bmg160_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_llcm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_llcm.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_morpheus_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_morpheus_icm4x6xx_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_morpheus_ndi_atraxa_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_morpheus_ndi_atraxa_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_morpheus_rpr0521rs_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_morpheus_rpr0521rs_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_morpheus_sku3_ak994x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_morpheus_sku3_ak994x_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_morpheus_sku3_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_morpheus_sku3_icm4x6xx_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_morpheus_sku3_icm4x6xx_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_morpheus_sku3_icm4x6xx_1.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_oracle_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_oracle_ak991x_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_oracle_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_oracle_icm4x6xx_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_oracle_icm4x6xx_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_oracle_icm4x6xx_1.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_oracle_pah_813x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_oracle_pah_813x_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_oracle_rpr0521rs_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_oracle_rpr0521rs_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_oracle_tsl2540.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_oracle_tsl2540.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_sns_amd_sw_enabled.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_sns_dae.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_sns_tilt_sw_enabled.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_trinity_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_trinity_icm4x6xx_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_trinity_ndi_atraxa_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_trinity_ndi_atraxa_0.json \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/sxr2130_trinity_rpr0521rs_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sxr2130_trinity_rpr0521rs_0.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3408.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
     vendor/realme/sm8250-common/proprietary/vendor/etc/sensors/config/wigig_sensing_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/wigig_sensing_0.json \
@@ -1973,7 +1206,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libosie_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libosie_skel.so \
-    vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libpmucount_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libpmucount_skel.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libproxy_skel.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
@@ -2015,7 +1247,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
@@ -2121,6 +1352,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQ6MSFR_manager_stub.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
+    vendor/realme/sm8250-common/proprietary/vendor/lib64/libQTEEConnector_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_listener.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
@@ -2340,11 +1572,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.oplus.hardware.extcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.extcamera@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
+    vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.3.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.mwqem@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
@@ -2389,9 +1623,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.5.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.7.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
+    vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.2.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
@@ -2410,7 +1646,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
-    vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
@@ -2418,6 +1653,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
+    vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.1.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/realme/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.0.so \

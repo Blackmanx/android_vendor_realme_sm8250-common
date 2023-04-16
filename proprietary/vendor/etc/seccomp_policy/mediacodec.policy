@@ -19,3 +19,11 @@ timer_settime: 1
 rt_sigtimedwait: 1
 readlink: 1
 open: 1
+
+#ifdef OPLUS_FEATURE_VIDEOLOGKIT
+#Yangwen@MULTIMEDIA.MEDIASERVER.PLAYER,20220615,for omx video dump
+unlinkat: 1
+mkdirat: 1
+flock: 1
+fchmod: 1
+#endif /*OPLUS_FEATURE_VIDEOLOGKIT*/

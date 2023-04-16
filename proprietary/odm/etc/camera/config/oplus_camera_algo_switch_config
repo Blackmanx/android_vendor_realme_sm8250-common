@@ -778,7 +778,7 @@
                     "enable" : 1,
                     "aps_algo_blurless" : 1,
                     "aps_algo_bokeh" : 0,
-                    "aps_algo_hdr" : 1,
+                    "aps_algo_hdr" : 0,
                     "aps_algo_lowlight_hdr" : 1,
                     "aps_algo_raw_hdr" : 0,
                     "aps_algo_pf" : 0,
@@ -896,7 +896,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd" ]
+                            "algo_list": [ "preview_asd", "preview_gesture" ]
                         }
                     }
                 }
@@ -1136,7 +1136,7 @@
                             "enable": 0
                         },
                         "asd": {
-                            "enable": 0,
+                            "enable": 1,
                             "master_input_width": 1440,
                             "master_input_height": 1080,
                             "slave_input_width": 0,
@@ -1176,7 +1176,7 @@
                             "enable": 0
                         },
                         "asd": {
-                            "enable": 0,
+                            "enable": 1,
                             "master_input_width": 1440,
                             "master_input_height": 1080,
                             "slave_input_width": 0,
@@ -1188,7 +1188,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd" ]
+                            "algo_list": [ "preview_gesture" ]
                         }
                     }
                 }
@@ -1273,7 +1273,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd" ]
+                            "algo_list": [ "preview_asd", "preview_gesture" ]
                         }
                     }
                 }

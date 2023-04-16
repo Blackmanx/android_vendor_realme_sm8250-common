@@ -57,7 +57,7 @@
         ]
     },
     "org.codeaurora.ims": {
-        "isFreeDomEvictionPackge": true
+        "isFreeDomEvictionPackge": false
     },
     "android": {
         "isFreeDomEvictionPackge": true
@@ -187,7 +187,10 @@
         "needLimitFpsForAPI1": true
     },
     "com.skype.raider": {
-        "needLimitFpsForAPI1": true
+        "needLimitFpsForAPI1": true,
+        "maxPreviewWidthForAPI2": 1920,
+        "maxPreviewHeightForAPI2": 1080,
+        "thirdPartyAppLimitPicture": true
     },
     "com.vkontakte.android": {
         "needLimitFpsForAPI1": true
@@ -222,4 +225,17 @@
             "3264x1836",
         ]
     },
+    "com.manboker.headportrait":{
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1080
+    },
+    "im.kumu.ph":{
+        "previewSizeForAPI1Width": 2304,
+        "previewSizeForAPI1Height": 1046,
+        "feature_resolution_enable":true
+    },
+    "com.tencent.mtt":{
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1080
+    }
 }
