@@ -488,6 +488,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/realme/sm8250-common/proprietary/odm/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_ODM)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/realme/sm8250-common/proprietary/odm/etc/wifi/bin_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/bin_version \
+    vendor/realme/sm8250-common/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
+    vendor/realme/sm8250-common/proprietary/odm/etc/wifi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb_version \
     vendor/realme/sm8250-common/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/120ms_RTP.bin \
     vendor/realme/sm8250-common/proprietary/odm/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/140ms_RTP.bin \
