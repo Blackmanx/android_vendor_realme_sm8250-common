@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/realme/sm8250-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/realme/sm8250-common/proprietary/odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service \
+    vendor/realme/sm8250-common/proprietary/odm/bin/hw/vendor.ozoaudio.media.c2@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.ozoaudio.media.c2@1.0-service \
     vendor/realme/sm8250-common/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/realme/sm8250-common/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/realme/sm8250-common/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
@@ -487,8 +488,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/realme/sm8250-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/sm8250-common/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
+    vendor/realme/sm8250-common/proprietary/odm/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc \
     vendor/realme/sm8250-common/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/realme/sm8250-common/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
+    vendor/realme/sm8250-common/proprietary/vendor/etc/media_codecs_c2_oplus_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_oplus_audio.xml \
+    vendor/realme/sm8250-common/proprietary/odm/etc/ozosdk_CC160.license:$(TARGET_COPY_OUT_ODM)/etc/ozosdk_CC160.license \
+    vendor/realme/sm8250-common/proprietary/odm/etc/ozosdk_CC169.license:$(TARGET_COPY_OUT_ODM)/etc/ozosdk_CC169.license \
+    vendor/realme/sm8250-common/proprietary/odm/etc/ozosdk_x3_x3pro.license:$(TARGET_COPY_OUT_ODM)/etc/ozosdk_x3_x3pro.license \
     vendor/realme/sm8250-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/realme/sm8250-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/realme/sm8250-common/proprietary/odm/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_ODM)/etc/seccomp_policy/codec2.vendor.base.policy \
@@ -526,7 +532,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_params.bin \
     vendor/realme/sm8250-common/proprietary/odm/lib/libDeVIS.so:$(TARGET_COPY_OUT_ODM)/lib/libDeVIS.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/libaudioEngineerTest.so:$(TARGET_COPY_OUT_ODM)/lib/libaudioEngineerTest.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libav_ozodecoder.so:$(TARGET_COPY_OUT_ODM)/lib/libav_ozodecoder.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libav_ozoencoder.so:$(TARGET_COPY_OUT_ODM)/lib/libav_ozoencoder.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libcodec2_soft_ozodec.so:$(TARGET_COPY_OUT_ODM)/lib/libcodec2_soft_ozodec.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libcodec2_soft_ozoenc.so:$(TARGET_COPY_OUT_ODM)/lib/libcodec2_soft_ozoenc.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libozoaudiodecoder.so:$(TARGET_COPY_OUT_ODM)/lib/libozoaudiodecoder.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libozoaudioencoder.so:$(TARGET_COPY_OUT_ODM)/lib/libozoaudioencoder.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/libozoc2store.so:$(TARGET_COPY_OUT_ODM)/lib/libozoc2store.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/rfsa/adsp/aiboost/libaiboostsr_skel_v66.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libaiboostsr_skel_v66.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/rfsa/adsp/libQnnHtp.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libQnnHtp.so \
@@ -563,6 +576,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm8250-common/proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_skel.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/rfsa/adsp/libworker_pool.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libworker_pool.so \
+    vendor/realme/sm8250-common/proprietary/odm/lib/soundfx/libozoprocessing.so:$(TARGET_COPY_OUT_ODM)/lib/soundfx/libozoprocessing.so \
     vendor/realme/sm8250-common/proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/realme/sm8250-common/proprietary/odm/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.secure_element@1.0-impl.so \
