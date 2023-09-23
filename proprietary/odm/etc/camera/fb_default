@@ -4,7 +4,7 @@
     "facebeauty_algo_lib_flag": 4,
     "support_mode_param_flag": 0,
     "support_video_allfeature_flag": 1,
-    "contour_optimize_flag": 1,
+    "contour_optimize_flag": 0,
 
     "front": {
         "preview":{
