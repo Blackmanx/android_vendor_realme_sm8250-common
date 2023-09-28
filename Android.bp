@@ -101,9 +101,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	name: "HotwordEnrollmentOKGoogle",
 	owner: "realme",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogle.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -113,9 +113,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
+	name: "HotwordEnrollmentXGoogle",
 	owner: "realme",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogle.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -191,6 +191,13 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util.impl",
+	owner: "realme",
+	jars: ["proprietary/product/framework/com.android.hotwordenrollment.common.util.impl.jar"],
+	product_specific: true,
 }
 
 dex_import {
