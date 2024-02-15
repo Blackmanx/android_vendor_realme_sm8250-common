@@ -105,7 +105,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentOKGoogle",
 	owner: "realme",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogle/HotwordEnrollmentOKGoogle.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogle.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -117,7 +117,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentXGoogle",
 	owner: "realme",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogle/HotwordEnrollmentXGoogle.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogle.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
