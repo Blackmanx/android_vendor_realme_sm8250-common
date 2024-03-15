@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************
+ **
+ ** Copyright (C), 2008-2020, OPLUS Mobile Comm Corp., Ltd
+ **
+ ** Description : 1.0
+ **           This is a common file
+ **
+ ** Version: 1.0
+ ** Date created: 12:00, 2020/07/31
+ ** Author: DongMeihan
+ **
+ *************************************************************/
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.oplus.hardware.cammidasservice</name>
+        <fqname>IMIDASService/default</fqname>
+    </hal>
+</manifest>
