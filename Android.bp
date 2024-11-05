@@ -182,6 +182,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "OplusNrMode",
+	owner: "realme",
+	apk: "proprietary/system_ext/priv-app/OplusNrMode/OplusNrMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "realme",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
@@ -320,6 +332,13 @@ dex_import {
 }
 
 dex_import {
+	name: "oplus-telephony-common",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/oplus-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "qcrilhook",
 	owner: "realme",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
@@ -369,7 +388,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.1-service-qti.xml",
+	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
 	filename_from_src: true,
@@ -378,7 +397,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks@1.3-service-qti-hta.xml",
+	name: "android.hardware.neuralnetworks@1.3-service-qti-hta",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml",
 	filename_from_src: true,
@@ -387,7 +406,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks@1.3-service-qti.xml",
+	name: "android.hardware.neuralnetworks@1.3-service-qti",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
 	filename_from_src: true,
@@ -396,7 +415,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_osiesr.xml",
+	name: "manifest_oplus_osiesr",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_oplus_osiesr.xml",
 	filename_from_src: true,
@@ -405,7 +424,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service.xml",
+	name: "vendor.qti.gnss@4.0-service",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
@@ -414,7 +433,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.sigma_miracast.xml",
+	name: "vendor.qti.hardware.sigma_miracast",
 	owner: "realme",
 	src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast.xml",
 	filename_from_src: true,
@@ -423,7 +442,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine.xml",
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
 	filename_from_src: true,
@@ -432,7 +451,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_dax_dolby_v3_6.xml",
+	name: "manifest_dax_dolby_v3_6",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml",
 	filename_from_src: true,
@@ -441,7 +460,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplusSensor.xml",
+	name: "manifest_oplusSensor",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor.xml",
 	filename_from_src: true,
@@ -450,7 +469,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_cameraextension_aidl.xml",
+	name: "manifest_oplus_cameraextension_aidl",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml",
 	filename_from_src: true,
@@ -459,7 +478,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_cammidasservice_aidl.xml",
+	name: "manifest_oplus_cammidasservice_aidl",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml",
 	filename_from_src: true,
@@ -468,26 +487,12 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_fingerprint.xml",
+	name: "manifest_oplus_fingerprint",
 	owner: "realme",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
-}
-
-install_symlink {
-	name: "libimscamera_jni_libimscamera_jni_symlink64",
-	system_ext_specific: true,
-	installed_location: "priv-app/ims/lib/arm64/libimscamera_jni.so",
-	symlink_target: "/system_ext/lib64/libimscamera_jni.so",
-}
-
-install_symlink {
-	name: "libimsmedia_jni_libimsmedia_jni_symlink64",
-	system_ext_specific: true,
-	installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
-	symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
 }
 
 install_symlink {
