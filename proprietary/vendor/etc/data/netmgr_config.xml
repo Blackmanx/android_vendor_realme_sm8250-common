@@ -2677,16 +2677,8 @@
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
-      <!-- #ifdef OPLUS_BUG_STABILITY -->
-      <!-- YangHao@BSP.STABILITY, 2020/04/03, for ipa crash issue -->
-      <!--
       <data name="rsc" type="int"> 1 </data>
       <data name="rsb" type="int"> 1 </data>
-      -->
-      <!-- #else -->
-      <data name="rsc" type="int"> 0 </data>
-      <data name="rsb" type="int"> 0 </data>
-      <!-- #endif /* OPLUS_BUG_STABILITY */ -->
       <data name="mhip" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
@@ -2830,16 +2822,8 @@
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
-      <!-- #ifdef OPLUS_BUG_STABILITY -->
-      <!-- YangHao@BSP.STABILITY, 2020/04/03, for ipa crash issue -->
-      <!--
       <data name="rsc" type="int"> 1 </data>
       <data name="rsb" type="int"> 1 </data>
-      -->
-      <!-- #else -->
-      <data name="rsc" type="int"> 0 </data>
-      <data name="rsb" type="int"> 0 </data>
-      <!-- #endif /* OPLUS_BUG_STABILITY */ -->
       <data name="mhip" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
@@ -2990,16 +2974,8 @@
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
       <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
-      <!-- #ifdef OPLUS_BUG_STABILITY -->
-      <!-- YangHao@BSP.STABILITY, 2020/04/03, for ipa crash issue -->
-      <!--
       <data name="rsc" type="int"> 1 </data>
       <data name="rsb" type="int"> 1 </data>
-      -->
-      <!-- #else -->
-      <data name="rsc" type="int"> 0 </data>
-      <data name="rsb" type="int"> 0 </data>
-      <!-- #endif /* OPLUS_BUG_STABILITY */ -->
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="rmnet_perf" type="int"> 3 </data>
       <data name="uplink_priority" type="int"> 1 </data>
